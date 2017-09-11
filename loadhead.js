@@ -4,6 +4,7 @@ var navpartcontainer = $('<div class="container" id="id_navcontainer"></div>');
 
 if (level==1) {
 	var indexurl = "index.html";
+	var venueurl = "venue.html";
 
 /*
 	var Registrationurl = "registration.html";
@@ -24,7 +25,6 @@ if (level==1) {
 	var ArtifactsTrackCFP="cfp/ArtifactsTrackCFP.html";
 	var CallForJournalFirstPresentation="cfp/CallForJournalFirstPresentation.html"; 
 
-	var venueurl = "venue.html";
 	var orgcommitteeurl = "Organization Committee.html";
 	var procommitteeurl = "Program Committee.html";
 	var awardommitteeurl = "AwardCommittee.html";
@@ -40,6 +40,8 @@ if (level==1) {
 }
 else if (level>=2) {
 	var indexurl = "../index.html";
+	var venueurl = "../venue.html";
+
 /*
 	var Registrationurl = "../registration.html";
 	var Programurl = "../ToBeAnnounced.html";
@@ -59,7 +61,6 @@ else if (level>=2) {
 	var ArtifactsTrackCFP="../cfp/ArtifactsTrackCFP.html";
 	var CallForJournalFirstPresentation="../cfp/CallForJournalFirstPresentation.html"; 
 
-	var venueurl = "../venue.html";
 	var orgcommitteeurl = "../Organization Committee.html";
 	var procommitteeurl = "../Program Committee.html";
 	var awardommitteeurl = "../AwardCommittee.html";
@@ -143,9 +144,6 @@ navbarcollapseul.append(li_coevents);
     li_socialevents.find('ul').append('<li><a href="'+Toururl+'">Tour</a></li>');
     navbarcollapseul.append(li_socialevents);
 
-var li_venue = $('<li><a href="'+venueurl+'">Venue</a></li>');  
-navbarcollapseul.append(li_venue); 
-
 var li_team = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Team<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 li_team.find('ul').append('<li><a href="http://conferences.computer.org/icsm/Steering_Committee_Members.html">Steering Committee</a></li>');
 li_team.find('ul').append('<li><a href="'+orgcommitteeurl+'">Organizing Committee</a></li>');
@@ -161,12 +159,15 @@ li_travel.find('ul').append('<li><a href="'+roomsharingurl+'">Room Sharing Reque
 
 navbarcollapseul.append(li_travel); 
 
-navbarcollapse.append(navbarcollapseul);
-
-navpartcontainer.append(navbarcollapse);
 
 */
 
+var li_venue = $('<li><a href="'+venueurl+'">Venue</a></li>');  
+navbarcollapseul.append(li_venue); 
+
+navbarcollapse.append(navbarcollapseul);
+
+navpartcontainer.append(navbarcollapse);
 
 navpart.append(navpartcontainer);
 
