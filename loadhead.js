@@ -5,7 +5,7 @@ var navpartcontainer = $('<div class="container" id="id_navcontainer"></div>');
 if (level==1) {
 	var indexurl = "index.html";
 	var venueurl = "venue.html";
-
+	var orgcommitteeurl = "Organization Committee.html";
 /*
 	var Registrationurl = "registration.html";
 	var Programurl = "ToBeAnnounced.html";
@@ -24,8 +24,7 @@ if (level==1) {
 	var DoctoralCFP = "cfp/DoctoralSymposiumCFP.html";
 	var ArtifactsTrackCFP="cfp/ArtifactsTrackCFP.html";
 	var CallForJournalFirstPresentation="cfp/CallForJournalFirstPresentation.html"; 
-
-	var orgcommitteeurl = "Organization Committee.html";
+	
 	var procommitteeurl = "Program Committee.html";
 	var awardommitteeurl = "AwardCommittee.html";
 
@@ -41,6 +40,7 @@ if (level==1) {
 else if (level>=2) {
 	var indexurl = "../index.html";
 	var venueurl = "../venue.html";
+	var orgcommitteeurl = "../Organization Committee.html";
 
 /*
 	var Registrationurl = "../registration.html";
@@ -61,7 +61,6 @@ else if (level>=2) {
 	var ArtifactsTrackCFP="../cfp/ArtifactsTrackCFP.html";
 	var CallForJournalFirstPresentation="../cfp/CallForJournalFirstPresentation.html"; 
 
-	var orgcommitteeurl = "../Organization Committee.html";
 	var procommitteeurl = "../Program Committee.html";
 	var awardommitteeurl = "../AwardCommittee.html";
 
@@ -132,31 +131,31 @@ li_cfp.find('ul').append('<li><a href="'+CallForJournalFirstPresentation+'">Jour
 navbarcollapseul.append(li_cfp);        
           
 var li_coevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Co-Located Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');       
-li_coevents.find('ul').append('<li><a href="http://www.ieee-scam.org/2017/" target="_blank">SCAM</a></li>');
-li_coevents.find('ul').append('<li><a href="http://vissoft17.dcc.uchile.cl" target="_blank">VISSOFT</a></li>');
-li_coevents.find('ul').append('<li><a href="http://www.se.fudan.edu.cn/events/Internetware2017" target="_blank">Internetware</a></li>');
-li_coevents.find('ul').append('<li><a href="http://www.se.fudan.edu.cn/events/SESummit2017/">China SE Research and Industry Summit</a></li>');
+li_coevents.find('ul').append('<li>SCAM</li>');
+li_coevents.find('ul').append('<li>VISSOFT</li>');
 navbarcollapseul.append(li_coevents);
+
 
     var li_socialevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Social Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
     li_socialevents.find('ul').append('<li><a href="'+DocSymDinnerReceptionBanqueturl+'">DocSym Dinner&Reception&Banquet</a></li>');
     li_socialevents.find('ul').append('<li><a href="'+GamesReceptionurl+'">Games@Reception</a></li>');
     li_socialevents.find('ul').append('<li><a href="'+Toururl+'">Tour</a></li>');
     navbarcollapseul.append(li_socialevents);
-
+*/
 var li_team = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Team<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 li_team.find('ul').append('<li><a href="http://conferences.computer.org/icsm/Steering_Committee_Members.html">Steering Committee</a></li>');
 li_team.find('ul').append('<li><a href="'+orgcommitteeurl+'">Organizing Committee</a></li>');
+navbarcollapseul.append(li_team);
+
+/*
 li_team.find('ul').append('<li><a href="'+procommitteeurl+'">Program Committee</a></li>');
 li_team.find('ul').append('<li><a href="'+awardommitteeurl+'">Award Committee</a></li>');
-navbarcollapseul.append(li_team);        
+
 
 var li_travel = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Travel<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 li_travel.find('ul').append('<li><a href="'+travelvisaurl+'">Visa Information</a></li>');
 li_travel.find('ul').append('<li><a href="'+touristguideurl+'">Tourist Information</a></li>');
 li_travel.find('ul').append('<li><a href="'+roomsharingurl+'">Room Sharing Request</a></li>');
-
-
 navbarcollapseul.append(li_travel); 
 
 
