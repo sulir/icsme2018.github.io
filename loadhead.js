@@ -5,7 +5,7 @@ var navpartcontainer = $('<div class="container" id="id_navcontainer"></div>');
 if (level==1) {
 	var indexurl = "index.html";
 	var venueurl = "venue.html";
-	var orgcommitteeurl = "Organization Committee.html";
+	var orgcommitteeurl = "OrganizationCommittee.html";
 /*
 	var Registrationurl = "registration.html";
 	var Programurl = "ToBeAnnounced.html";
@@ -25,7 +25,7 @@ if (level==1) {
 	var ArtifactsTrackCFP="cfp/ArtifactsTrackCFP.html";
 	var CallForJournalFirstPresentation="cfp/CallForJournalFirstPresentation.html"; 
 	
-	var procommitteeurl = "Program Committee.html";
+	var procommitteeurl = "ProgramCommittee.html";
 	var awardommitteeurl = "AwardCommittee.html";
 
 	var travelvisaurl = "travel/visareq.html";
@@ -40,7 +40,7 @@ if (level==1) {
 else if (level>=2) {
 	var indexurl = "../index.html";
 	var venueurl = "../venue.html";
-	var orgcommitteeurl = "../Organization Committee.html";
+	var orgcommitteeurl = "../OrganizationCommittee.html";
 
 /*
 	var Registrationurl = "../registration.html";
@@ -93,8 +93,8 @@ else if (level==3) {
 	var CallForJournalFirstPresentation="../cfp/CallForJournalFirstPresentation.html"; 
 
 	var venueurl = "../venue.html";
-	var orgcommitteeurl = "../Organization Committee.html";
-	var procommitteeurl = "../Program Committee.html";
+	var orgcommitteeurl = "../OrganizationCommittee.html";
+	var procommitteeurl = "../ProgramCommittee.html";
 }
 */
 
