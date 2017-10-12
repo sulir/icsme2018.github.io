@@ -129,13 +129,13 @@ li_cfp.find('ul').append('<li><a href="'+ArtifactsTrackCFP+'">Artifacts Track</a
 li_cfp.find('ul').append('<li><a href="'+DoctoralCFP+'">Doctoral Symposium</a></li>');
 li_cfp.find('ul').append('<li><a href="'+CallForJournalFirstPresentation+'">Journal First Presentation</a></li>');           
 navbarcollapseul.append(li_cfp);        
-          
+*/          
 var li_coevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Co-Located Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');       
-li_coevents.find('ul').append('<li>SCAM</li>');
-li_coevents.find('ul').append('<li>VISSOFT</li>');
+li_coevents.find('ul').append('<li><a href="http://www.ieee-scam.org/2018/">SCAM 2018</a></li>');
+li_coevents.find('ul').append('<li><a href="http://vissoft-conferences.dcc.uchile.cl/">VISSOFT 2018</a></li>');
 navbarcollapseul.append(li_coevents);
 
-
+/*
     var li_socialevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Social Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
     li_socialevents.find('ul').append('<li><a href="'+DocSymDinnerReceptionBanqueturl+'">DocSym Dinner&Reception&Banquet</a></li>');
     li_socialevents.find('ul').append('<li><a href="'+GamesReceptionurl+'">Games@Reception</a></li>');
