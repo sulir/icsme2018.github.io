@@ -132,7 +132,7 @@ navbarcollapseul.append(li_cfp);
 */          
 var li_coevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Co-Located Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');       
 li_coevents.find('ul').append('<li><a href="http://www.ieee-scam.org/2018/">SCAM 2018</a></li>');
-li_coevents.find('ul').append('<li><a href="http://vissoft-conferences.dcc.uchile.cl/">VISSOFT 2018</a></li>');
+li_coevents.find('ul').append('<li><a href="http://vissoft18.etsii.urjc.es">VISSOFT 2018</a></li>');
 navbarcollapseul.append(li_coevents);
 
 /*
