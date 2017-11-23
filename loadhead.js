@@ -27,10 +27,12 @@ if (level==1) {
 	
 	var procommitteeurl = "ProgramCommittee.html";
 	var awardommitteeurl = "AwardCommittee.html";
-
+*/
 	var travelvisaurl = "travel/visareq.html";
-    var touristguideurl = "travel/Tourist.html";
 	var roomsharingurl = "travel/roomsharing.html";
+/*
+    var touristguideurl = "travel/Tourist.html";
+
 
     var DocSymDinnerReceptionBanqueturl = "SocialEvents/DocSymDinner&Reception&Banquet.html";
     var GamesReceptionurl = "SocialEvents/Games@Reception.html";
@@ -63,10 +65,12 @@ else if (level>=2) {
 
 	var procommitteeurl = "../Program Committee.html";
 	var awardommitteeurl = "../AwardCommittee.html";
-
+*/
 	var travelvisaurl = "../travel/visareq.html";
-	var touristguideurl = "../travel/Tourist.html";
 	var roomsharingurl = "../travel/roomsharing.html";
+/*
+
+	var touristguideurl = "../travel/Tourist.html";
 
     var DocSymDinnerReceptionBanqueturl = "../SocialEvents/DocSymDinner&Reception&Banquet.html";
     var GamesReceptionurl = "../SocialEvents/Games@Reception.html";
@@ -151,15 +155,13 @@ navbarcollapseul.append(li_team);
 li_team.find('ul').append('<li><a href="'+procommitteeurl+'">Program Committee</a></li>');
 li_team.find('ul').append('<li><a href="'+awardommitteeurl+'">Award Committee</a></li>');
 
+*/
 
 var li_travel = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Travel<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 li_travel.find('ul').append('<li><a href="'+travelvisaurl+'">Visa Information</a></li>');
-li_travel.find('ul').append('<li><a href="'+touristguideurl+'">Tourist Information</a></li>');
+/* li_travel.find('ul').append('<li><a href="'+touristguideurl+'">Tourist Information</a></li>'); */
 li_travel.find('ul').append('<li><a href="'+roomsharingurl+'">Room Sharing Request</a></li>');
 navbarcollapseul.append(li_travel); 
-
-
-*/
 
 var li_venue = $('<li><a href="'+venueurl+'">Venue</a></li>');  
 navbarcollapseul.append(li_venue); 
