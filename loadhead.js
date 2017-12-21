@@ -46,7 +46,7 @@ else if (level>=2) {
 	var venueurl = "../venue.html";
 	var orgcommitteeurl = "../OrganizationCommittee.html";
 	var ResearchTrackCFP = "../cfp/ResearchTrackCFP.html";
-	var IndustryTrackCFP = "cfp/IndustryTrackCFP.html";
+	var IndustryTrackCFP = "/cfp/IndustryTrackCFP.html";
 
 /*
 	var Registrationurl = "../registration.html";
