@@ -8,6 +8,7 @@ if (level==1) {
 	var orgcommitteeurl = "OrganizationCommittee.html";
 	var ResearchTrackCFP = "cfp/ResearchTrackCFP.html";
 	var IndustryTrackCFP = "cfp/IndustryTrackCFP.html";
+	var ToolDemoTrackCFP = "cfp/ToolDemoTrackCFP.html";
 /*
 	var Registrationurl = "registration.html";
 	var Programurl = "ToBeAnnounced.html";
@@ -25,8 +26,8 @@ if (level==1) {
 	var ToolDemoTrackCFP = "cfp/ToolDemoCFP.html";
 	var DoctoralCFP = "cfp/DoctoralSymposiumCFP.html";
 	var ArtifactsTrackCFP="cfp/ArtifactsTrackCFP.html";
-	var CallForJournalFirstPresentation="cfp/CallForJournalFirstPresentation.html"; 
-	
+	var CallForJournalFirstPresentation="cfp/CallForJournalFirstPresentation.html";
+
 	var procommitteeurl = "ProgramCommittee.html";
 	var awardommitteeurl = "AwardCommittee.html";
 */
@@ -46,7 +47,8 @@ else if (level>=2) {
 	var venueurl = "../venue.html";
 	var orgcommitteeurl = "../OrganizationCommittee.html";
 	var ResearchTrackCFP = "../cfp/ResearchTrackCFP.html";
-	var IndustryTrackCFP = "/cfp/IndustryTrackCFP.html";
+	var IndustryTrackCFP = "../cfp/IndustryTrackCFP.html";
+	var ToolDemoTrackCFP = "../cfp/ToolDemoTrackCFP.html";
 
 /*
 	var Registrationurl = "../registration.html";
@@ -65,7 +67,7 @@ else if (level>=2) {
 	var ToolDemoTrackCFP = "../cfp/ToolDemoCFP.html";
 	var DoctoralCFP = "../cfp/DoctoralSymposiumCFP.html";
 	var ArtifactsTrackCFP="../cfp/ArtifactsTrackCFP.html";
-	var CallForJournalFirstPresentation="../cfp/CallForJournalFirstPresentation.html"; 
+	var CallForJournalFirstPresentation="../cfp/CallForJournalFirstPresentation.html";
 
 	var procommitteeurl = "../Program Committee.html";
 	var awardommitteeurl = "../AwardCommittee.html";
@@ -98,7 +100,7 @@ else if (level==3) {
 	var ToolDemoTrackCFP = "../cfp/ToolDemoCFP.html";
 	var DoctoralCFP = "../cfp/DoctoralSymposiumCFP.html";
 	var ArtifactsTrackCFP="../cfp/ArtifactsTrackCFP.html";
-	var CallForJournalFirstPresentation="../cfp/CallForJournalFirstPresentation.html"; 
+	var CallForJournalFirstPresentation="../cfp/CallForJournalFirstPresentation.html";
 
 	var venueurl = "../venue.html";
 	var orgcommitteeurl = "../OrganizationCommittee.html";
@@ -126,25 +128,26 @@ var li_program = $('<li class="dropdown"><a href="'+Programurl+'" class="dropdow
     li_program.find('ul').append('<li><a href="'+PaperAccepted+'">Accepted Papers</a></li>');
 
 navbarcollapseul.append(li_program);
-      
+
 */
 
-var li_cfp = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Call for Papers<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');        
+var li_cfp = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Call for Papers<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 
-li_cfp.find('ul').append('<li><a href="'+ResearchTrackCFP+'">Research Track</a></li>'); 
+li_cfp.find('ul').append('<li><a href="'+ResearchTrackCFP+'">Research Track</a></li>');
 li_cfp.find('ul').append('<li><a href="'+IndustryTrackCFP+'">Industry Track</a></li>');
+li_cfp.find('ul').append('<li><a href="'+ToolDemoTrackCFP+'">Tool Demo Track</a></li>');
 /*
-li_cfp.find('ul').append('<li><a href="'+ERATrackCFP+'"">NIER Track</a></li>');   
-li_cfp.find('ul').append('<li><a href="'+IndustryTrackCPF+'">Industry Track</a></li>');   
-li_cfp.find('ul').append('<li><a href="'+ToolDemoTrackCFP+'">Tool Demo Track</a></li>');   
+li_cfp.find('ul').append('<li><a href="'+ERATrackCFP+'"">NIER Track</a></li>');
+li_cfp.find('ul').append('<li><a href="'+IndustryTrackCPF+'">Industry Track</a></li>');
+li_cfp.find('ul').append('<li><a href="'+ToolDemoTrackCFP+'">Tool Demo Track</a></li>');
 li_cfp.find('ul').append('<li><a href="'+ArtifactsTrackCFP+'">Artifacts Track</a></li>');
 li_cfp.find('ul').append('<li><a href="'+DoctoralCFP+'">Doctoral Symposium</a></li>');
-li_cfp.find('ul').append('<li><a href="'+CallForJournalFirstPresentation+'">Journal First Presentation</a></li>');   
-*/ 
-navbarcollapseul.append(li_cfp); 
-     
-         
-var li_coevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Co-Located Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');       
+li_cfp.find('ul').append('<li><a href="'+CallForJournalFirstPresentation+'">Journal First Presentation</a></li>');
+*/
+navbarcollapseul.append(li_cfp);
+
+
+var li_coevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Co-Located Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 li_coevents.find('ul').append('<li><a href="http://www.ieee-scam.org/2018/">SCAM 2018</a></li>');
 li_coevents.find('ul').append('<li><a href="http://vissoft18.etsii.urjc.es">VISSOFT 2018</a></li>');
 navbarcollapseul.append(li_coevents);
@@ -171,10 +174,10 @@ var li_travel = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data
 li_travel.find('ul').append('<li><a href="'+travelvisaurl+'">Visa Information</a></li>');
 /* li_travel.find('ul').append('<li><a href="'+touristguideurl+'">Tourist Information</a></li>'); */
 li_travel.find('ul').append('<li><a href="'+roomsharingurl+'">Room Sharing Request</a></li>');
-navbarcollapseul.append(li_travel); 
+navbarcollapseul.append(li_travel);
 
-var li_venue = $('<li><a href="'+venueurl+'">Venue</a></li>');  
-navbarcollapseul.append(li_venue); 
+var li_venue = $('<li><a href="'+venueurl+'">Venue</a></li>');
+navbarcollapseul.append(li_venue);
 
 navbarcollapse.append(navbarcollapseul);
 
@@ -187,5 +190,3 @@ $('body').append(navpart);
 
 
 };
-
-
