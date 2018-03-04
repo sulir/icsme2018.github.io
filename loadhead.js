@@ -11,6 +11,8 @@ if (level==1) {
 	var ToolDemoTrackCFP = "cfp/ToolDemoTrackCFP.html";
 	var DoctoralCFP = "cfp/DoctoralSymposiumCFP.html";
 	var ERATrackCFP = "cfp/NIERTrackCFP.html";
+	
+	var procommitteeurl = "ProgramCommittee.html";
 /*
 	var Registrationurl = "registration.html";
 	var Programurl = "ToBeAnnounced.html";
@@ -54,6 +56,7 @@ else if (level>=2) {
 	var DoctoralCFP = "../cfp/DoctoralSymposiumCFP.html";
 	var ERATrackCFP = "../cfp/NIERTrackCFP.html";
 
+  var procommitteeurl = "../Program Committee.html"
 /*
 	var Registrationurl = "../registration.html";
 	var Programurl = "../ToBeAnnounced.html";
@@ -166,9 +169,9 @@ var li_team = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-t
 li_team.find('ul').append('<li><a href="http://conferences.computer.org/icsm/Steering_Committee_Members.html">Steering Committee</a></li>');
 li_team.find('ul').append('<li><a href="'+orgcommitteeurl+'">Organizing Committee</a></li>');
 navbarcollapseul.append(li_team);
+li_team.find('ul').append('<li><a href="'+procommitteeurl+'">Program Committee</a></li>');
 
 /*
-li_team.find('ul').append('<li><a href="'+procommitteeurl+'">Program Committee</a></li>');
 li_team.find('ul').append('<li><a href="'+awardommitteeurl+'">Award Committee</a></li>');
 
 */
