@@ -11,7 +11,7 @@ if (level==1) {
 	var ToolDemoTrackCFP = "cfp/ToolDemoTrackCFP.html";
 	var DoctoralCFP = "cfp/DoctoralSymposiumCFP.html";
 	var ERATrackCFP = "cfp/NIERTrackCFP.html";
-	
+
 	var procommitteeurl = "ProgramCommittee.html";
 /*
 	var Registrationurl = "registration.html";
@@ -56,7 +56,7 @@ else if (level>=2) {
 	var DoctoralCFP = "../cfp/DoctoralSymposiumCFP.html";
 	var ERATrackCFP = "../cfp/NIERTrackCFP.html";
 
-  var procommitteeurl = "../Program Committee.html"
+  var procommitteeurl = "../ProgramCommittee.html"
 /*
 	var Registrationurl = "../registration.html";
 	var Programurl = "../ToBeAnnounced.html";
