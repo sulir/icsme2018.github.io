@@ -11,6 +11,7 @@ if (level==1) {
 	var ToolDemoTrackCFP = "cfp/ToolDemoTrackCFP.html";
 	var DoctoralCFP = "cfp/DoctoralSymposiumCFP.html";
 	var ERATrackCFP = "cfp/NIERTrackCFP.html";
+	var ArtifactsTrackCFP="cfp/ArtifactsTrackCFP.html";
 
 	var procommitteeurl = "ProgramCommittee.html";
 /*
@@ -55,6 +56,7 @@ else if (level>=2) {
 	var ToolDemoTrackCFP = "../cfp/ToolDemoTrackCFP.html";
 	var DoctoralCFP = "../cfp/DoctoralSymposiumCFP.html";
 	var ERATrackCFP = "../cfp/NIERTrackCFP.html";
+	var ArtifactsTrackCFP="../cfp/ArtifactsTrackCFP.html";
 
   var procommitteeurl = "../ProgramCommittee.html"
 /*
@@ -145,9 +147,9 @@ li_cfp.find('ul').append('<li><a href="'+IndustryTrackCFP+'">Industry Track</a><
 li_cfp.find('ul').append('<li><a href="'+ToolDemoTrackCFP+'">Tool Demo Track</a></li>');
 li_cfp.find('ul').append('<li><a href="'+DoctoralCFP+'">Doctoral Symposium</a></li>');
 li_cfp.find('ul').append('<li><a href="'+ERATrackCFP+'"">NIER Track</a></li>');
+li_cfp.find('ul').append('<li><a href="'+ArtifactsTrackCFP+'">Artifacts Track</a></li>');
 
 /*
-li_cfp.find('ul').append('<li><a href="'+ArtifactsTrackCFP+'">Artifacts Track</a></li>');
 li_cfp.find('ul').append('<li><a href="'+CallForJournalFirstPresentation+'">Journal First Presentation</a></li>');
 */
 navbarcollapseul.append(li_cfp);
