@@ -13,8 +13,9 @@ if (level==1) {
 	var ERATrackCFP = "cfp/NIERTrackCFP.html";
 	var ArtifactsTrackCFP="cfp/ArtifactsTrackCFP.html";
 	var CallForJournalFirstPresentation="cfp/CallForJournalFirstPresentation.html";
-
 	var procommitteeurl = "ProgramCommittee.html";
+	var travelvisaurl = "travel/visareq.html";
+	var roomsharingurl = "travel/roomsharing.html";
 /*
 	var Registrationurl = "registration.html";
 	var Programurl = "ToBeAnnounced.html";
@@ -37,8 +38,7 @@ if (level==1) {
 	var procommitteeurl = "ProgramCommittee.html";
 	var awardommitteeurl = "AwardCommittee.html";
 */
-	var travelvisaurl = "travel/visareq.html";
-	var roomsharingurl = "travel/roomsharing.html";
+
 /*
     var touristguideurl = "travel/Tourist.html";
 
