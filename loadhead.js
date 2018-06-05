@@ -16,12 +16,13 @@ if (level==1) {
 	var procommitteeurl = "ProgramCommittee.html";
 	var travelvisaurl = "travel/visareq.html";
 	var roomsharingurl = "travel/roomsharing.html";
+	var PaperAccepted = "program/Accepted.html";
+	var Programurl = "ToBeAnnounced.html";
+
 /*
 	var Registrationurl = "registration.html";
-	var Programurl = "ToBeAnnounced.html";
 	var Socialurl = "ToBeAnnounced.html";
 
-	var PaperAccepted = "program/Accepted.html";
 	var keynotes = "program/keynotes.html";
 	var LGBT = "program/LGBT.html";
     var Scheduleurl = "program/schedule.html";
@@ -60,13 +61,13 @@ else if (level>=2) {
 	var ArtifactsTrackCFP="../cfp/ArtifactsTrackCFP.html";
 	var CallForJournalFirstPresentation="../cfp/CallForJournalFirstPresentation.html";
 
-  var procommitteeurl = "../ProgramCommittee.html"
+    var procommitteeurl = "../ProgramCommittee.html"
+	var PaperAccepted = "../program/Accepted.html";
+	var Programurl = "../ToBeAnnounced.html";
 /*
 	var Registrationurl = "../registration.html";
-	var Programurl = "../ToBeAnnounced.html";
 	var Socialurl = "../ToBeAnnounced.html";
 
-	var PaperAccepted = "../program/Accepted.html";
 	var keynotes = "../program/keynotes.html";
 	var LGBT = "../program/LGBT.html";
     var Scheduleurl = "../program/schedule.html";
@@ -125,22 +126,24 @@ navpartcontainer.append(navbarheader);
 var navbarcollapse = $('<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"></div>');
 var navbarcollapseul = $('<ul class="nav navbar-nav navbar-right" id="id_navbarul"></ul>');
 
-
 /*
 
 var li_registration = $('<li><a href="'+Registrationurl+'">Registration</a></li>');
 navbarcollapseul.append(li_registration);
+*/
 
 var li_program = $('<li class="dropdown"><a href="'+Programurl+'" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Program<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
+    li_program.find('ul').append('<li><a href="'+PaperAccepted+'">Accepted Papers</a></li>');
+
+/*
     li_program.find('ul').append('<li><a href="'+Scheduleurl+'">ICSME Schedule</a></li>');
     li_program.find('ul').append('<li><a href="'+DoctoralSymposiumurl+'">Doctoral Symposium Program</a></li>');
     li_program.find('ul').append('<li><a href="'+keynotes+'">Keynotes</a></li>');
 	li_program.find('ul').append('<li><a href="'+LGBT+'">LGBT@SoftEng Lunch</a></li>');
-    li_program.find('ul').append('<li><a href="'+PaperAccepted+'">Accepted Papers</a></li>');
+*/
 
 navbarcollapseul.append(li_program);
 
-*/
 
 var li_cfp = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Call for Papers<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 
