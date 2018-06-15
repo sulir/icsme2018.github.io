@@ -177,7 +177,7 @@ var li_team = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-t
 li_team.find('ul').append('<li><a href="http://conferences.computer.org/icsm/Steering_Committee_Members.html">Steering Committee</a></li>');
 li_team.find('ul').append('<li><a href="'+orgcommitteeurl+'">Organizing Committee</a></li>');
 li_team.find('ul').append('<li><a href="'+procommitteeurl+'">Program Committee</a></li>');
-li_team.find('ul').append('<li><a href="'+studentvoluntee+'">Students Voluntee</a></li>');
+li_team.find('ul').append('<li><a href="'+studentvoluntee+'">Student Volunteers</a></li>');
 navbarcollapseul.append(li_team);
 
 /*
