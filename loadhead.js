@@ -18,6 +18,7 @@ if (level==1) {
 	var roomsharingurl = "travel/roomsharing.html";
 	var PaperAccepted = "program/Accepted.html";
 	var Programurl = "ToBeAnnounced.html";
+	var studentvoluntee = "cfp/StudentVolunteerCall.html"
 
 /*
 	var Registrationurl = "registration.html";
@@ -64,6 +65,7 @@ else if (level>=2) {
     var procommitteeurl = "../ProgramCommittee.html"
 	var PaperAccepted = "../program/Accepted.html";
 	var Programurl = "../ToBeAnnounced.html";
+	var studentvoluntee = "../cfp/StudentVolunteerCall.html"
 /*
 	var Registrationurl = "../registration.html";
 	var Socialurl = "../ToBeAnnounced.html";
@@ -174,8 +176,9 @@ navbarcollapseul.append(li_coevents);
 var li_team = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Team<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 li_team.find('ul').append('<li><a href="http://conferences.computer.org/icsm/Steering_Committee_Members.html">Steering Committee</a></li>');
 li_team.find('ul').append('<li><a href="'+orgcommitteeurl+'">Organizing Committee</a></li>');
-navbarcollapseul.append(li_team);
 li_team.find('ul').append('<li><a href="'+procommitteeurl+'">Program Committee</a></li>');
+li_team.find('ul').append('<li><a href="'+studentvoluntee+'">Students Voluntee</a></li>');
+navbarcollapseul.append(li_team);
 
 /*
 li_team.find('ul').append('<li><a href="'+awardommitteeurl+'">Award Committee</a></li>');
