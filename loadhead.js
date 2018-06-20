@@ -166,9 +166,10 @@ navbarcollapseul.append(li_coevents);
 
 /*
     var li_socialevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Social Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
-    li_socialevents.find('ul').append('<li><a href="'+DocSymDinnerReceptionBanqueturl+'">DocSym Dinner&Reception&Banquet</a></li>');
-    li_socialevents.find('ul').append('<li><a href="'+GamesReceptionurl+'">Games@Reception</a></li>');
-    li_socialevents.find('ul').append('<li><a href="'+Toururl+'">Tour</a></li>');
+    li_socialevents.find('ul').append('<li><a href="'+prereception_url  +'">Pre-reception</a></li>');
+    li_socialevents.find('ul').append('<li><a href="'+reception_url+'">Reception</a></li>');
+    li_socialevents.find('ul').append('<li><a href="'+banquet_url+'">Banquet</a></li>');
+    li_socialevents.find('ul').append('<li><a href="'+escorial_url+'">Cultural Visit</a></li>');
     navbarcollapseul.append(li_socialevents);
 */
 var li_team = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Team<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
