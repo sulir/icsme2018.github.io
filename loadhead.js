@@ -20,8 +20,8 @@ if (level==1) {
 	var Programurl = "ToBeAnnounced.html";
 	var studentvoluntee = "cfp/StudentVolunteerCall.html"
 
-/*
 	var Registrationurl = "registration.html";
+/*
 	var Socialurl = "ToBeAnnounced.html";
 
 	var keynotes = "program/keynotes.html";
@@ -66,8 +66,9 @@ else if (level>=2) {
 	var PaperAccepted = "../program/Accepted.html";
 	var Programurl = "../ToBeAnnounced.html";
 	var studentvoluntee = "../cfp/StudentVolunteerCall.html"
-/*
+
 	var Registrationurl = "../registration.html";
+/*
 	var Socialurl = "../ToBeAnnounced.html";
 
 	var keynotes = "../program/keynotes.html";
@@ -128,11 +129,10 @@ navpartcontainer.append(navbarheader);
 var navbarcollapse = $('<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"></div>');
 var navbarcollapseul = $('<ul class="nav navbar-nav navbar-right" id="id_navbarul"></ul>');
 
-/*
+
 
 var li_registration = $('<li><a href="'+Registrationurl+'">Registration</a></li>');
 navbarcollapseul.append(li_registration);
-*/
 
 var li_program = $('<li class="dropdown"><a href="'+Programurl+'" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Program<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
     li_program.find('ul').append('<li><a href="'+PaperAccepted+'">Accepted Papers</a></li>');
