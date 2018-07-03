@@ -21,6 +21,7 @@ if (level==1) {
 	var studentvoluntee = "cfp/StudentVolunteerCall.html"
 
 	var Registrationurl = "registration.html";
+	var awardommitteeurl = "AwardCommittee.html";
 /*
 	var Socialurl = "ToBeAnnounced.html";
 
@@ -29,16 +30,7 @@ if (level==1) {
     var Scheduleurl = "program/schedule.html";
     var DoctoralSymposiumurl = "program/DoctoralSymposium.html";
 
-	var ResearchTrackCFP = "cfp/ResearchTrackCFP.html";
-	var ERATrackCFP = "cfp/NIERTrackCFP.html";
-	var IndustryTrackCPF = "cfp/IndustryTrackCFP.html";
-	var ToolDemoTrackCFP = "cfp/ToolDemoCFP.html";
-	var DoctoralCFP = "cfp/DoctoralSymposiumCFP.html";
-	var ArtifactsTrackCFP="cfp/ArtifactsTrackCFP.html";
-	var CallForJournalFirstPresentation="cfp/CallForJournalFirstPresentation.html";
-
 	var procommitteeurl = "ProgramCommittee.html";
-	var awardommitteeurl = "AwardCommittee.html";
 */
 
 /*
@@ -68,6 +60,7 @@ else if (level>=2) {
 	var studentvoluntee = "../cfp/StudentVolunteerCall.html"
 
 	var Registrationurl = "../registration.html";
+	var awardommitteeurl = "../AwardCommittee.html";
 /*
 	var Socialurl = "../ToBeAnnounced.html";
 
@@ -76,16 +69,7 @@ else if (level>=2) {
     var Scheduleurl = "../program/schedule.html";
     var DoctoralSymposiumurl = "../program/DoctoralSymposium.html";
 
-	var ResearchTrackCFP = "../cfp/ResearchTrackCFP.html";
-	var ERATrackCFP = "../cfp/NIERTrackCFP.html";
-	var IndustryTrackCPF = "../cfp/IndustryTrackCFP.html";
-	var ToolDemoTrackCFP = "../cfp/ToolDemoCFP.html";
-	var DoctoralCFP = "../cfp/DoctoralSymposiumCFP.html";
-	var ArtifactsTrackCFP="../cfp/ArtifactsTrackCFP.html";
-	var CallForJournalFirstPresentation="../cfp/CallForJournalFirstPresentation.html";
-
 	var procommitteeurl = "../Program Committee.html";
-	var awardommitteeurl = "../AwardCommittee.html";
 */
 	var travelvisaurl = "../travel/visareq.html";
 	var roomsharingurl = "../travel/roomsharing.html";
@@ -179,12 +163,8 @@ li_team.find('ul').append('<li><a href="http://conferences.computer.org/icsm/Ste
 li_team.find('ul').append('<li><a href="'+orgcommitteeurl+'">Organizing Committee</a></li>');
 li_team.find('ul').append('<li><a href="'+procommitteeurl+'">Program Committee</a></li>');
 li_team.find('ul').append('<li><a href="'+studentvoluntee+'">Student Volunteers</a></li>');
-navbarcollapseul.append(li_team);
-
-/*
 li_team.find('ul').append('<li><a href="'+awardommitteeurl+'">Award Committee</a></li>');
-
-*/
+navbarcollapseul.append(li_team);
 
 var li_travel = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Travel<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 li_travel.find('ul').append('<li><a href="'+travelvisaurl+'">Visa Information</a></li>');
