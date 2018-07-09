@@ -17,6 +17,7 @@ if (level==1) {
 	var travelvisaurl = "travel/visareq.html";
 	var roomsharingurl = "travel/roomsharing.html";
 	var PaperAccepted = "program/Accepted.html";
+	var keynotes = "program/Keynotes.html";
 	var Programurl = "ToBeAnnounced.html";
 	var studentvoluntee = "cfp/StudentVolunteerCall.html"
 
@@ -28,7 +29,6 @@ if (level==1) {
 /*
 	var Socialurl = "ToBeAnnounced.html";
 
-	var keynotes = "program/keynotes.html";
 	var LGBT = "program/LGBT.html";
     var Scheduleurl = "program/schedule.html";
     var DoctoralSymposiumurl = "program/DoctoralSymposium.html";
@@ -60,6 +60,7 @@ else if (level>=2) {
     var procommitteeurl = "../ProgramCommittee.html"
 	var PaperAccepted = "../program/Accepted.html";
 	var Programurl = "../ToBeAnnounced.html";
+	var keynotes = "../program/Keynotes.html";
 	var studentvoluntee = "../cfp/StudentVolunteerCall.html"
 
 	var Registrationurl = "../registration.html";
@@ -69,7 +70,6 @@ else if (level>=2) {
 /*
 	var Socialurl = "../ToBeAnnounced.html";
 
-	var keynotes = "../program/keynotes.html";
 	var LGBT = "../program/LGBT.html";
     var Scheduleurl = "../program/schedule.html";
     var DoctoralSymposiumurl = "../program/DoctoralSymposium.html";
@@ -125,11 +125,11 @@ navbarcollapseul.append(li_registration);
 
 var li_program = $('<li class="dropdown"><a href="'+Programurl+'" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Program<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
     li_program.find('ul').append('<li><a href="'+PaperAccepted+'">Accepted Papers</a></li>');
+    li_program.find('ul').append('<li><a href="'+keynotes+'">Keynotes</a></li>');
 
 /*
     li_program.find('ul').append('<li><a href="'+Scheduleurl+'">ICSME Schedule</a></li>');
     li_program.find('ul').append('<li><a href="'+DoctoralSymposiumurl+'">Doctoral Symposium Program</a></li>');
-    li_program.find('ul').append('<li><a href="'+keynotes+'">Keynotes</a></li>');
 	li_program.find('ul').append('<li><a href="'+LGBT+'">LGBT@SoftEng Lunch</a></li>');
 */
 
