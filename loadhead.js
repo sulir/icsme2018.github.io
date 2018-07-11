@@ -25,7 +25,7 @@ if (level==1) {
 	var awardommitteeurl = "AwardCommittee.html";
 	
     var escorialurl = "social/Escorial.html";
-	
+	var prereceptionurl = "social/Escorial.html";	
 /*
 	var Socialurl = "ToBeAnnounced.html";
 
@@ -67,6 +67,7 @@ else if (level>=2) {
 	var awardommitteeurl = "../AwardCommittee.html";
 	
 	var escorialurl = "../social/Escorial.html";
+    var prereceptionurl = "../social/Prereception.html";
 /*
 	var Socialurl = "../ToBeAnnounced.html";
 
@@ -158,8 +159,8 @@ navbarcollapseul.append(li_coevents);
 var li_socialevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Social Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 /* li_socialevents.find('ul').append('<li><a href="'+lunchurl  +'">Lunches</a></li>');
 li_socialevents.find('ul').append('<li><a href="'+coffeebreakurl  +'">Coffee Breaks</a></li>');
-li_socialevents.find('ul').append('<li><a href="'+prereceptionurl  +'">Pre-reception</a></li>');
 li_socialevents.find('ul').append('<li><a href="'+sportsurl+'">Sports</a></li>'); */
+li_socialevents.find('ul').append('<li><a href="'+prereceptionurl+'">Pre-reception</a></li>');
 li_socialevents.find('ul').append('<li><a href="'+escorialurl+'">Cultural Visit</a></li>');
 navbarcollapseul.append(li_socialevents);
 
