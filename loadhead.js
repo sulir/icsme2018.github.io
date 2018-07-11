@@ -25,7 +25,7 @@ if (level==1) {
 	var awardommitteeurl = "AwardCommittee.html";
 	
     var escorialurl = "social/Escorial.html";
-	var prereceptionurl = "social/Escorial.html";	
+	var prereceptionurl = "social/Prereception.html";	
 /*
 	var Socialurl = "ToBeAnnounced.html";
 
