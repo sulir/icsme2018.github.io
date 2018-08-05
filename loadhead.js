@@ -26,10 +26,14 @@ if (level==1) {
 	
     var escorialurl = "social/Escorial.html";
 	var prereceptionurl = "social/Prereception.html";	
+	var coffeebreakurl = "social/CoffeeBreak.html";
+    var lunchurl = "social/Lunch.html";
+	var LGBT = "social/LGBT.html";
+
+
 /*
 	var Socialurl = "ToBeAnnounced.html";
 
-	var LGBT = "program/LGBT.html";
     var Scheduleurl = "program/schedule.html";
     var DoctoralSymposiumurl = "program/DoctoralSymposium.html";
 
@@ -68,10 +72,13 @@ else if (level>=2) {
 	
 	var escorialurl = "../social/Escorial.html";
     var prereceptionurl = "../social/Prereception.html";
+	var coffeebreakurl = "../social/CoffeeBreak.html";
+    var lunchurl = "../social/Lunch.html";
+	var LGBT = "../social/LGBT.html";
+
 /*
 	var Socialurl = "../ToBeAnnounced.html";
 
-	var LGBT = "../program/LGBT.html";
     var Scheduleurl = "../program/schedule.html";
     var DoctoralSymposiumurl = "../program/DoctoralSymposium.html";
 
@@ -131,7 +138,6 @@ var li_program = $('<li class="dropdown"><a href="'+Programurl+'" class="dropdow
 /*
     li_program.find('ul').append('<li><a href="'+Scheduleurl+'">ICSME Schedule</a></li>');
     li_program.find('ul').append('<li><a href="'+DoctoralSymposiumurl+'">Doctoral Symposium Program</a></li>');
-	li_program.find('ul').append('<li><a href="'+LGBT+'">LGBT@SoftEng Lunch</a></li>');
 */
 
 navbarcollapseul.append(li_program);
@@ -156,11 +162,12 @@ li_coevents.find('ul').append('<li><a href="http://vissoft18.etsii.urjc.es">VISS
 li_coevents.find('ul').append('<li><a href="https://dysdoc.github.io/dysdoc3/index.html">DySDoc 2018</a></li>');
 navbarcollapseul.append(li_coevents);
 
-var li_socialevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Social Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
-/* li_socialevents.find('ul').append('<li><a href="'+lunchurl  +'">Lunches</a></li>');
-li_socialevents.find('ul').append('<li><a href="'+coffeebreakurl  +'">Coffee Breaks</a></li>');
-li_socialevents.find('ul').append('<li><a href="'+sportsurl+'">Sports</a></li>'); */
+var li_socialevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Food &amp; Social Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 li_socialevents.find('ul').append('<li><a href="'+prereceptionurl+'">Pre-reception</a></li>');
+li_socialevents.find('ul').append('<li><a href="'+coffeebreakurl  +'">Coffee Breaks</a></li>');
+li_socialevents.find('ul').append('<li><a href="'+lunchurl  +'">Lunches</a></li>');
+/* li_socialevents.find('ul').append('<li><a href="'+sportsurl+'">Sports</a></li>'); */
+li_socialevents.find('ul').append('<li><a href="'+LGBT+'">LGBT@SoftEng Lunch</a></li>');
 li_socialevents.find('ul').append('<li><a href="'+escorialurl+'">Cultural Visit</a></li>');
 navbarcollapseul.append(li_socialevents);
 
