@@ -23,18 +23,17 @@ if (level==1) {
 
 	var Registrationurl = "registration.html";
 	var awardommitteeurl = "AwardCommittee.html";
-	
+
     var escorialurl = "social/Escorial.html";
-	var prereceptionurl = "social/Prereception.html";	
+	var prereceptionurl = "social/Prereception.html";
 	var coffeebreakurl = "social/CoffeeBreak.html";
     var lunchurl = "social/Lunch.html";
 	var LGBT = "social/LGBT.html";
+	var Scheduleurl = "program/schedule.html";
 
 
 /*
 	var Socialurl = "ToBeAnnounced.html";
-
-    var Scheduleurl = "program/schedule.html";
     var DoctoralSymposiumurl = "program/DoctoralSymposium.html";
 
 	var procommitteeurl = "ProgramCommittee.html";
@@ -61,17 +60,17 @@ else if (level>=2) {
 
 	var Registrationurl = "../registration.html";
 	var awardommitteeurl = "../AwardCommittee.html";
-	
+
 	var escorialurl = "../social/Escorial.html";
     var prereceptionurl = "../social/Prereception.html";
 	var coffeebreakurl = "../social/CoffeeBreak.html";
     var lunchurl = "../social/Lunch.html";
 	var LGBT = "../social/LGBT.html";
+	var Scheduleurl = "../program/schedule.html";
 
 /*
 	var Socialurl = "../ToBeAnnounced.html";
 
-    var Scheduleurl = "../program/schedule.html";
     var DoctoralSymposiumurl = "../program/DoctoralSymposium.html";
 
 	var procommitteeurl = "../Program Committee.html";
@@ -94,9 +93,9 @@ navbarcollapseul.append(li_registration);
 var li_program = $('<li class="dropdown"><a href="'+Programurl+'" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Program<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
     li_program.find('ul').append('<li><a href="'+PaperAccepted+'">Accepted Papers</a></li>');
     li_program.find('ul').append('<li><a href="'+keynotes+'">Keynotes</a></li>');
+		li_program.find('ul').append('<li><a href="'+Scheduleurl+'">ICSME Schedule</a></li>');
 
 /*
-    li_program.find('ul').append('<li><a href="'+Scheduleurl+'">ICSME Schedule</a></li>');
     li_program.find('ul').append('<li><a href="'+DoctoralSymposiumurl+'">Doctoral Symposium Program</a></li>');
 */
 
