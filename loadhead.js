@@ -30,7 +30,7 @@ if (level==1) {
     var lunchurl = "social/Lunch.html";
 	var LGBT = "social/LGBT.html";
 	var Scheduleurl = "program/schedule.html";
-
+	var Sessionsurl = "program/SessionList.html";
 
 /*
 	var Socialurl = "ToBeAnnounced.html";
@@ -67,6 +67,7 @@ else if (level>=2) {
     var lunchurl = "../social/Lunch.html";
 	var LGBT = "../social/LGBT.html";
 	var Scheduleurl = "../program/schedule.html";
+	var Sessionsurl = "../program/SessionList.html";
 
 /*
 	var Socialurl = "../ToBeAnnounced.html";
@@ -93,7 +94,9 @@ navbarcollapseul.append(li_registration);
 var li_program = $('<li class="dropdown"><a href="'+Programurl+'" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Program<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
     li_program.find('ul').append('<li><a href="'+PaperAccepted+'">Accepted Papers</a></li>');
     li_program.find('ul').append('<li><a href="'+keynotes+'">Keynotes</a></li>');
-		li_program.find('ul').append('<li><a href="'+Scheduleurl+'">ICSME Schedule</a></li>');
+	li_program.find('ul').append('<li><a href="'+Scheduleurl+'">Schedule</a></li>');
+	li_program.find('ul').append('<li><a href="'+Sessionsurl+'">Sessions</a></li>');
+
 
 /*
     li_program.find('ul').append('<li><a href="'+DoctoralSymposiumurl+'">Doctoral Symposium Program</a></li>');
