@@ -18,6 +18,7 @@ if (level==1) {
     var tourism = "travel/tourism.html";
     var weather = "travel/weather.html";
     var soccertickets = "travel/soccertickets.html";
+	var staysafe = "travel/safety.html";
 	var travelvisaurl = "travel/visareq.html";
 	var roomsharingurl = "travel/roomsharing.html";
 	var PaperAccepted = "program/Accepted.html";
@@ -81,6 +82,7 @@ else if (level>=2) {
 
     var wheretostay = "../travel/wheretostay.html";
     var tourism = "../travel/tourism.html";
+	var staysafe = "../travel/safety.html";
     var weather = "../travel/weather.html";
     var soccertickets = "../travel/soccertickets.html";
 	var travelvisaurl = "../travel/visareq.html";
@@ -153,6 +155,7 @@ navbarcollapseul.append(li_team);
 var li_travel = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Travel<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 li_travel.find('ul').append('<li><a href="'+wheretostay+'">Where To Stay</a></li>');
 li_travel.find('ul').append('<li><a href="'+tourism+'">Tourism</a></li>');
+li_travel.find('ul').append('<li><a href="'+staysafe+'">Stay Safe</a></li>');
 li_travel.find('ul').append('<li><a href="'+weather+'">Weather</a></li>');
 li_travel.find('ul').append('<li><a href="'+soccertickets+'">Soccer (incl. Tickets)</a></li>');
 li_travel.find('ul').append('<li><a href="'+travelvisaurl+'">Visa Information</a></li>');
