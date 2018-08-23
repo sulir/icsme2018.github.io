@@ -29,6 +29,7 @@ if (level==1) {
 	var Registrationurl = "registration.html";
 	var awardommitteeurl = "AwardCommittee.html";
 
+    var conduct = "social/CodeOfConduct.html";
     var escorialurl = "social/Escorial.html";
 	var prereceptionurl = "social/Prereception.html";
 	var coffeebreakurl = "social/CoffeeBreak.html";
@@ -66,6 +67,7 @@ else if (level>=2) {
 	var Registrationurl = "../registration.html";
 	var awardommitteeurl = "../AwardCommittee.html";
 
+    var conduct = "../social/CodeOfConduct.html";
 	var escorialurl = "../social/Escorial.html";
     var prereceptionurl = "../social/Prereception.html";
 	var coffeebreakurl = "../social/CoffeeBreak.html";
@@ -134,6 +136,7 @@ li_coevents.find('ul').append('<li><a href="https://dysdoc.github.io/dysdoc3/ind
 navbarcollapseul.append(li_coevents);
 
 var li_socialevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Food &amp; Social Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
+li_socialevents.find('ul').append('<li><a href="'+conduct+'">Code of Conduct</a></li>');
 li_socialevents.find('ul').append('<li><a href="'+prereceptionurl+'">Pre-reception</a></li>');
 li_socialevents.find('ul').append('<li><a href="'+reception  +'">Reception</a></li>');
 li_socialevents.find('ul').append('<li><a href="'+banquet  +'">Banquet</a></li>');
