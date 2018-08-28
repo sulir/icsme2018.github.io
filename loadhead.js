@@ -18,6 +18,7 @@ if (level==1) {
     var tourism = "travel/tourism.html";
     var weather = "travel/weather.html";
     var soccertickets = "travel/soccertickets.html";
+	var staysafe = "travel/safety.html";
 	var travelvisaurl = "travel/visareq.html";
 	var roomsharingurl = "travel/roomsharing.html";
 	var PaperAccepted = "program/Accepted.html";
@@ -28,6 +29,7 @@ if (level==1) {
 	var Registrationurl = "registration.html";
 	var awardommitteeurl = "AwardCommittee.html";
 
+    var conduct = "social/CodeOfConduct.html";
     var escorialurl = "social/Escorial.html";
 	var prereceptionurl = "social/Prereception.html";
 	var coffeebreakurl = "social/CoffeeBreak.html";
@@ -65,6 +67,7 @@ else if (level>=2) {
 	var Registrationurl = "../registration.html";
 	var awardommitteeurl = "../AwardCommittee.html";
 
+    var conduct = "../social/CodeOfConduct.html";
 	var escorialurl = "../social/Escorial.html";
     var prereceptionurl = "../social/Prereception.html";
 	var coffeebreakurl = "../social/CoffeeBreak.html";
@@ -81,6 +84,7 @@ else if (level>=2) {
 
     var wheretostay = "../travel/wheretostay.html";
     var tourism = "../travel/tourism.html";
+	var staysafe = "../travel/safety.html";
     var weather = "../travel/weather.html";
     var soccertickets = "../travel/soccertickets.html";
 	var travelvisaurl = "../travel/visareq.html";
@@ -125,13 +129,14 @@ li_cfp.find('ul').append('<li><a href="'+CallForJournalFirstPresentation+'">Jour
 navbarcollapseul.append(li_cfp);
 
 
-var li_coevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Co-Located Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
+var li_coevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Co-Located<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
 li_coevents.find('ul').append('<li><a href="http://www.ieee-scam.org/2018/">SCAM 2018</a></li>');
 li_coevents.find('ul').append('<li><a href="http://vissoft18.etsii.urjc.es">VISSOFT 2018</a></li>');
 li_coevents.find('ul').append('<li><a href="https://dysdoc.github.io/dysdoc3/index.html">DySDoc 2018</a></li>');
 navbarcollapseul.append(li_coevents);
 
-var li_socialevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Food &amp; Social Events<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
+var li_socialevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Food &amp; Social<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
+li_socialevents.find('ul').append('<li><a href="'+conduct+'">Code of Conduct</a></li>');
 li_socialevents.find('ul').append('<li><a href="'+prereceptionurl+'">Pre-reception</a></li>');
 li_socialevents.find('ul').append('<li><a href="'+reception  +'">Reception</a></li>');
 li_socialevents.find('ul').append('<li><a href="'+banquet  +'">Banquet</a></li>');
@@ -150,17 +155,19 @@ li_team.find('ul').append('<li><a href="'+studentvoluntee+'">Student Volunteers<
 li_team.find('ul').append('<li><a href="'+awardommitteeurl+'">Award Committee</a></li>');
 navbarcollapseul.append(li_team);
 
-var li_travel = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Travel<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
+var li_travel = $('<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Venue &amp; Travel<span class="caret"></span></a><ul class="dropdown-menu" role="menu"></ul></li>');
+li_travel.find('ul').append('<li><a href="'+venueurl+'">Venue</a></li>');
 li_travel.find('ul').append('<li><a href="'+wheretostay+'">Where To Stay</a></li>');
 li_travel.find('ul').append('<li><a href="'+tourism+'">Tourism</a></li>');
+li_travel.find('ul').append('<li><a href="'+staysafe+'">Stay Safe</a></li>');
 li_travel.find('ul').append('<li><a href="'+weather+'">Weather</a></li>');
 li_travel.find('ul').append('<li><a href="'+soccertickets+'">Soccer (incl. Tickets)</a></li>');
 li_travel.find('ul').append('<li><a href="'+travelvisaurl+'">Visa Information</a></li>');
 li_travel.find('ul').append('<li><a href="'+roomsharingurl+'">Room Sharing Request</a></li>');
 navbarcollapseul.append(li_travel);
 
-var li_venue = $('<li><a href="'+venueurl+'">Venue</a></li>');
-navbarcollapseul.append(li_venue);
+var li_past = $('<li><a href="http://conferences.computer.org/icsm/">Previous Editions</a></li>');
+navbarcollapseul.append(li_past);
 
 navbarcollapse.append(navbarcollapseul);
 
