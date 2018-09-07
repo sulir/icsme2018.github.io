@@ -34,9 +34,11 @@ if (level==1) {
 	var prereceptionurl = "social/Prereception.html";
 	var coffeebreakurl = "social/CoffeeBreak.html";
     var lunchurl = "social/Lunch.html";
+    var sportsurl = "social/Sports.html";
 	var LGBT = "social/LGBT.html";
     var banquet = "social/Banquet.html";
     var reception = "social/Reception.html";
+    var afterparty = "social/AfterParty.html";
 	var Scheduleurl = "program/schedule.html";
 	var Sessionsurl = "program/SessionList.html";
 
@@ -72,9 +74,11 @@ else if (level>=2) {
     var prereceptionurl = "../social/Prereception.html";
 	var coffeebreakurl = "../social/CoffeeBreak.html";
     var lunchurl = "../social/Lunch.html";
+    var sportsurl = "../social/Sports.html";
 	var LGBT = "../social/LGBT.html";
     var banquet = "../social/Banquet.html";
     var reception = "../social/Reception.html";
+    var afterparty = "../social/AfterParty.html";
 	var Scheduleurl = "../program/schedule.html";
 	var Sessionsurl = "../program/SessionList.html";
 
@@ -139,10 +143,11 @@ var li_socialevents = $('<li class="dropdown"><a href="#" class="dropdown-toggle
 li_socialevents.find('ul').append('<li><a href="'+conduct+'">Code of Conduct</a></li>');
 li_socialevents.find('ul').append('<li><a href="'+prereceptionurl+'">Pre-reception</a></li>');
 li_socialevents.find('ul').append('<li><a href="'+reception  +'">Reception</a></li>');
+li_socialevents.find('ul').append('<li><a href="'+afterparty  +'">After Party</a></li>');
 li_socialevents.find('ul').append('<li><a href="'+banquet  +'">Banquet</a></li>');
 li_socialevents.find('ul').append('<li><a href="'+coffeebreakurl  +'">Coffee Breaks</a></li>');
 li_socialevents.find('ul').append('<li><a href="'+lunchurl  +'">Lunches</a></li>');
-/* li_socialevents.find('ul').append('<li><a href="'+sportsurl+'">Sports</a></li>'); */
+li_socialevents.find('ul').append('<li><a href="'+sportsurl+'">Sports</a></li>');
 li_socialevents.find('ul').append('<li><a href="'+LGBT+'">LGBT@SoftEng Lunch</a></li>');
 li_socialevents.find('ul').append('<li><a href="'+escorialurl+'">Cultural Visit</a></li>');
 navbarcollapseul.append(li_socialevents);
